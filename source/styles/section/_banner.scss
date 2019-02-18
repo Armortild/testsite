@@ -1,0 +1,33 @@
+.banner-section {
+  height: 100%;
+
+  .banner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70%;
+    background: #ccc url('../../images/banner1.jpg') center/cover no-repeat;
+
+    &__about, &__title {
+      font-family: $ff-main-bold;
+      font-weight: 700;
+      font-size: 3em;
+      line-height: 1;
+      display: table;
+      margin: 16px auto;
+      color: white;
+      border-radius: 5px;
+      mix-blend-mode: multiply;
+      padding: 5px 10px;
+      background: $color-top-btn;
+
+    }
+
+    .button {
+      margin: 20px auto;
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+.footer {
+  &__top {
+    padding: 20px 0 20px;
+    text-align: center;
+    background: $color-footer;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 1.8125rem;
+    color: #fff;
+    font-family: $ff-main-bold;
+  }
+
+  &__social {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid $color-footer;
+    border-radius: 3px;
+    &:hover {
+      outline: 2px solid $color-text-btn;
+      border-radius: 3px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__links {
+    margin-top: 20px;
+    color: #fff;
+
+    .fab {
+      color: #fff;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    color: $color-bg;
+  }
+
+  &__copy {
+    margin-top:50px;
+    font-size: 0.875rem;
+    color: $color-bg;
+  }
+}

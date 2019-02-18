@@ -1,0 +1,36 @@
+.title {
+  text-align: center;
+  &__line {
+  }
+
+  &__header {
+    font-family: $ff-main-bold;
+    font-size: 3em;
+
+    &:before {
+      content: "";
+      background-color: #000;
+      height: 4px;
+      width: 15%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    &:after {
+      content: "";
+      background-color: #000;
+      height: 4px;
+      width: 15%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__text {
+    font-family: $ff-main-bold;
+    font-size: 2em;
+  }
+
+}
+

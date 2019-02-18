@@ -1,0 +1,15 @@
+header.header
+    .header__top
+        .contacts
+            a.contact(href="+380000000000")
+                i.fas.fa-mobile-alt.contact__icon
+                span.contact__text Контактный телефон
+            a.contact(href="mailto:exq432@bigmir.net")
+                i.far.fa-envelope.contact__icon
+                span.contact__text E-mail
+    .header__bottom
+        .logo: img.logo__picture(src="images/footer_bg.png" alt="LOGO")
+        include nav
+        a.button.header__button.button_main(href="#") Консультации
+
+    include banner

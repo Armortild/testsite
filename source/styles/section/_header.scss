@@ -1,0 +1,61 @@
+.header {
+  height: 100vh;
+  min-height: 700px;
+  margin: auto;
+
+  &__top {
+    background-color: $color-bg;
+
+    .contacts {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+
+      .contact {
+        display: inline-block;
+        vertical-align: top;
+        color: $color-box-shadow;
+        transition: 0.3s;
+        font-size: 1.2rem;
+        font-family: $ff-main;
+        padding: 5px 20px;
+
+        &:hover {
+          color: lighten($color-box-shadow, 30%);
+        }
+
+        &:first-child {
+          border-right: 1px solid grey;
+          margin-right: 8px;
+          padding-right: 10px;
+
+        }
+
+        &__icon {
+          margin-right: 7px;
+          vertical-align: middle;
+          font-size: 1.5rem;
+        }
+
+        &__text {
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+
+    .logo {
+      &__picture {
+        display: block;
+        width: 150%;
+        height: 150%;
+      }
+    }
+  }
+}

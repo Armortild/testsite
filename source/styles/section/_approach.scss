@@ -1,0 +1,107 @@
+.approach {
+  padding: 5px 10px 20px;
+  background-color: $color-bg;
+  max-width: 1024px;
+  margin: auto;
+
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    counter-reset: count;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
+    color: $color-box-shadow;
+    background: #fff;
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+
+    &:nth-child(2n) {
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: right;
+
+
+      .approach__text {
+        padding: 70px 141px 55px 90px;
+      }
+
+      .approach__step {
+        right: auto;
+        left: -115px;
+      }
+    }
+  }
+
+  &__image {
+    padding-left: 10px ;
+    padding-right: 10px;
+    position: relative;
+    width: 150px;
+    min-width: 150px;
+    height: 130px;
+    min-height: 130px;
+    display: inline-block;
+    vertical-align:middle;
+
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align:middle;
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    padding: 70px 139px 55px 145px;
+    font-size: 0.875rem;
+  }
+
+  &__step {
+    @include centerer-y();
+    right: -120px;
+    width: 103px;
+    height: 103px;
+    padding-top: 10px;
+    border-radius: .6em;
+    border: 4px solid $color-top-btn;
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    background-color: $color-main;
+    color: #fff;
+
+    &:before {
+      content: counter(count);
+      counter-increment: count;
+      display: block;
+      font-family: $ff-steps;
+      font-size: 3rem;
+      line-height: 1;
+      color: #fff;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    font-size: 1.125rem;
+    font-family: $ff-main-bold;
+  }
+
+  &__description {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+

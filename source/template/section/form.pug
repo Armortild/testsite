@@ -1,0 +1,20 @@
+section.form-request
+    .title
+        h3.title__form Форма отправки
+            h6.title__form-bottom Заполните форму ниже
+    .btn-down
+        a.arrow-down(href="form.html" target="_blank")
+            i.fa.fa-angle-down
+
+    .form-container.is-hidden
+        form(method="post" action="#").form
+            button(type="button").form__close-button X
+            .form__text.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at consequuntur eligendi eveniet laboriosam nostrum nulla odit pariatur perspiciatis quasi.
+
+            .form__fields
+                input.form__input(type="text" placeholder="Ваше имя" data-valid="required")
+                input.form__input(type="email" placeholder="Email" data-valid="required" data-email)
+                input.form__input(type="text" placeholder="Контактный телефон" data-valid="required" data-number)
+
+            button(type="submit").button.button_main.button_text-uppercase Отправить

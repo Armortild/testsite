@@ -1,0 +1,39 @@
+.nav {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 150px;
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    font-family: $ff-main-bold;
+    text-decoration: none;
+    color: $color-box-shadow;
+    transition: 0.3s;
+    font-size: 0.9rem;
+
+    &:hover,
+    &_:active {
+      color: $color-text-hover;
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 6px;
+      height: 6px;
+      margin-left: 15px;
+      border-radius: 50%;
+      background: $color-box-shadow;
+    }
+    &:hover:after{
+      background: $color-text-hover;
+
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}

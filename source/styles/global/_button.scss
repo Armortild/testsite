@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  border-radius: .5em;
+  padding: 0.7em 1em;
+  color: $color-text-btn;
+  font-family: $ff-main-bold;
+  box-shadow: .2em .2em .3em $color-box-shadow;
+  transition: .4s;
+  text-decoration: none;
+  letter-spacing: .1em;
+  &:hover {
+    border-radius: .5em;
+    &:active {
+      box-shadow: 0em 0em 0em;
+    }
+  }
+  &_main {
+    background: $color-top-btn;
+    &:hover {
+      background: lighten($color-top-btn, 5%);
+      box-shadow: .2em .2em .3em lighten($color-box-shadow, 20%);
+      border-radius: .5em;
+      color: darken($color-text-btn, 10%);
+      &:active {
+        box-shadow: 0em 0em 0em;
+      }
+    }
+  }
+  &_text-uppercase{
+    text-transform: uppercase;
+  }
+}
+

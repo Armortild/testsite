@@ -1,0 +1,11 @@
+- var linkItems = ['linkedin', 'twitter', 'google-plus', 'facebook', 'instagram', 'pinterest']
+- var linkUrls = ['linkedin.com', 'twitter.com', 'google.com','facebook.com','instagram.com', 'pinterest.com']
+footer.footer
+    .footer__top
+        .footer__title Мы в социальных сетях
+            .footer__links
+                each item, key in linkItems
+                    a.footer__social(href="http://" + linkUrls[key] target="_blank")
+                        i(class="fab fa-" + item aria-hidden="true" fill='green')
+                            span.visually-hidden=linkItems
+        .footer__copy 2019 Все права защищены
